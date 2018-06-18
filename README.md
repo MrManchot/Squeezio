@@ -17,6 +17,9 @@ Library used :
 How to use :
 
 ```php
-$sqz = Sqz\Squeezio::getInstance('my-file.jpg');
-$sqz->exec();
+require __DIR__ . '/vendor/autoload.php';
+
+$sqz = Sqz\Squeezio::getInstance(__DIR__ . '/my-file.jpg');
+$sqz->setSize(800)->setQuality(70)->exec();
+print_r($sqz->getInfos());
 ```
