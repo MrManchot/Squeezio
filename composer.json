@@ -2,7 +2,10 @@
   "name": "mrmanchot/squeezio",
   "description": "Compress & Optimize all you images (jpg, png, gif, svg)",
   "keywords": [
-    "php", "compress", "optimize", "image"
+    "php",
+    "compress",
+    "optimize",
+    "image"
   ],
   "license": "MIT",
   "authors": [
@@ -13,7 +16,7 @@
   ],
   "autoload": {
     "psr-0": {
-      "Squeezio": "src"
+      "Sqz\\": "lib/"
     }
   },
   "require": {
