@@ -55,7 +55,7 @@ class Squeezio
 	{
 		$ext   = self::getExtension($file);
 		$class = 'Squeezio' . ucfirst($ext);
-		if (file_exists(__DIR__ . '/' . $class . '.php')) {
+		if (file_exists(__DIR__ . 'Squeezio.php/' . $class . '.php')) {
 			$className = 'Sqz\\' . $class;
 			
 			return new $className($file, $squeezed_file);
