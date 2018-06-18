@@ -1,6 +1,12 @@
 # Squeezio
 Compress &amp; Optimize all you images (jpg, png, gif, svg)
 
+Install with composer :
+
+```
+composer require mrmanchot/squeezio
+```
+
 Library used :
 - [ImageMagick](https://www.imagemagick.org/script/index.php)
 - [Gifsicle](https://www.lcdf.org/gifsicle/)
