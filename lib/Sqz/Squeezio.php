@@ -35,8 +35,11 @@ class Squeezio
             $this->file = $file;
             @chmod($this->file, 0777);
             $this->squeezed_file = is_null($squeezed_file) ? dirname($this->file) . '/squeezed_' . basename($file) : $squeezed_file;
-            copy($this->file, $this->squeezed_file);
-            @chmod($this->squeezed_file, 0777);
+            if(copy($this->file, $this->squeezed_file)) {
+                @chmod($this->squeezed_file, 0777);
+            } else {
+                $this->setError('Can not copy : ' . $this->squeezed_file);
+            }
         }
     }
 
