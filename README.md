@@ -1,6 +1,12 @@
 # Squeezio
 Compress &amp; Optimize all you images (jpg, png, gif, svg)
 
+Install libraries :
+
+```
+sudo apt-get install imagemagick gifsicle jpegoptim pngquant && sudo npm install -g svgo
+```
+
 Install with composer :
 
 ```
